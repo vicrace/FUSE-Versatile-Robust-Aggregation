@@ -1,7 +1,9 @@
 # Towards Practical FHE-Federated LLMs Training: FHE-Compatible Compression Techniques and Versatile Robust Aggregation
 
 This repository contains the official implementation of **FUSE**, a unified FHE-native compression suite for FHE-based Federated Learning on Large Language Models. **FUSE-SPA** (Sparse Update Packing),  **FUSE-RDX** (Radix Dimension Reduction) and **FUSE-Fusion** (Hybrid Mode).
+
 _and_
+
 **Versatile Robust Aggregation**, a unified FHE-compatible aggregation algorithms supporting FedAvg, FedProx, and Norm-Bounding.
 
 ---
@@ -33,5 +35,3 @@ All experiment configurations are pre-configured in the provided shell scripts.
   bash scripts/run_fuse_spa.sh    # Sparse Update Packing (Selective updates)
   bash scripts/run_fuse_rdx.sh    # Dimension Reduction (Compressed updates)
   bash scripts/run_fuse_fusion.sh # Hybrid Compression (Select then Compress)
-
-**Note**: Ensure your environment has the necessary permissions to execute the scripts: chmod +x scripts/*.sh.
